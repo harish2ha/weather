@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button onclick="getWeather()">Search</button>
+      </div>
+      <div class="current-weather">
+        <h2 id="cityName">New Delhi</h2>
+        <img
+          id="weatherIcon"
+          src="https://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0006_mist.png"
+          alt="Weather Icon"
+        />
+        <div class="temp" id="temperature">30°C</div>
+        <div class="description" id="description">Haze</div>
+      </div>
+      <div class="weather-details">
+        <div class="detail-box">
+          <div>Humidity</div>
+          <div id="humidity">70%</div>
+        </div>
+        <div class="detail-box">
+          <div>Wind Speed</div>
+          <div id="windSpeed">10 km/h</div>
+        </div>
+        <div class="detail-box">
+          <div>Feels Like</div>
+          <div id="feelsLike">31°C</div>
+        </div>
+        <div class="detail-box">
+          <div>UV Index</div>
+          <div id="uvIndex">8</div>
+        </div>
+      </div>
+      <div class="forecast" id="forecast">
+        <!-- Forecast will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
